@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Nest</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./css/grid-s.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./img/icon.svg" rel="icon" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="d-flex">
+          <div class="logo">
+            <a href="#">
+              <img src="./img/header/Logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul class="ul">
+              <li>
+                <a href="#" class="Active"> Home </a>
+              </li>
+
+              <li>
+                <a href="#"> About Us </a>
+              </li>
+
+              <li class="dropdown-center">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </button>
+                <ul class="dropdown-menu" style="top: 5px">
+                  <li><a class="dropdown-item Active" href="#">Home</a></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Products</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="links">
+            <a href="#" class="log"> Log In </a>
+
+            <a href="#" class="sign"> Sign Up </a>
+          </div>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#fff"
+            >
+              <path
+                d="M120-240v-66.67h520V-240H120Zm673.33-48L600.67-480.67l192-192L840-625.33 695.33-480.67l145.34 145.34L793.33-288ZM120-448v-66.67h400V-448H120Zm0-205.33V-720h520v66.67H120Z"
+              />
+            </svg>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                <img src="./img/heaader/Logo.svg" alt="" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <nav>
+                <ul class="ul">
+                  <li>
+                    <a href="#" class="Active"> Home </a>
+                  </li>
+
+                  <li>
+                    <a href="#"> About Us </a>
+                  </li>
+
+                  <li>
+                    <a href="#"> Products </a>
+                  </li>
+
+                  <li class="dropdown-center">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Contact Us
+                    </button>
+                    <ul class="dropdown-menu" style="top: 5px">
+                      <li><a class="dropdown-item Active" href="#">Home</a></li>
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><a class="dropdown-item" href="#">Products</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="links">
+                <a href="#" class="log"> Log In </a>
+
+                <a href="#" class="sign"> Sign Up </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="d-flex">
+          <div class="col">
+            <div class="item">
+              <div class="text">
+                <h1>Find Your Perfect Home with Ease</h1>
+
+                <p>
+                  Explore a wide range of properties that suit your lifestyle,
+                  with detailed listings, expert advice, and seamless
+                  transactions. Start your journey to a new home today
+                </p>
+              </div>
+
+              <div class="links">
+                <a href="#" class="buy"> Buy </a>
+
+                <a href="#" class="rent"> Rent </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col2">
+            <div class="image">
+              <img src="./img/hero-section/image.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <div class="text-group">
+          <h2>All You Need to Know About Us</h2>
+          <p>
+            At MyNest, we’re committed to helping you find your ideal property
+            with expertise and integrity. Learn about our journey and how we
+            bring your real estate goals to life
+          </p>
+        </div>
+        <div class="row">
+          <div class="item"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
