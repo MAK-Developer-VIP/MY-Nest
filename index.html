@@ -17,21 +17,21 @@
               <a href="#"><img src="./img/header/Logo.svg" alt="logo" /></a>
             </div>
           </div>
-          <nav class="col-auto">
-            <ul class="links">
+          <nav>
+            <ul>
               <li>
                 <a class="Active" href="#">Home</a>
               </li>
               <li>
                 <a href="#">About us</a>
               </li>
-              <li>
+              <li class="dropdown">
                 <a class="dropdown-center" href="#">Products</a>
                 <ul class="dropdown-menu" style="top: 5px">
-                  <li><a href="#">House</a></li>
-                  <li><a href="#">village</a></li>
-                  <li><a href="#">apartment</a></li>
-                  <li><a href="#">chalets</a></li>
+                  <li><a class="dropdown-item" href="#">House</a></li>
+                  <li><a class="dropdown-item" href="#">village</a></li>
+                  <li><a class="dropdown-item" href="#">apartment</a></li>
+                  <li><a class="dropdown-item" href="#">chalets</a></li>
                 </ul>
               </li>
               <li>
@@ -50,22 +50,24 @@
 
     <section class="hero-section">
       <div class="container">
-        <div class="content">
-          <div class="text-group">
-            <h1>Find Your Perfect Home with Ease</h1>
-            <p>
-              Explore a wide range of properties that suit your lifestyle, with
-              detailed listings, expert advice, and seamless transactions. Start
-              your journey to a new home today
-            </p>
+        <div class="row">
+          <div class="content">
+            <div class="text-group">
+              <h1>Find Your Perfect Home with Ease</h1>
+              <p>
+                Explore a wide range of properties that suit your lifestyle,
+                with detailed listings, expert advice, and seamless
+                transactions. Start your journey to a new home today
+              </p>
+            </div>
+            <div class="bottons">
+              <button class="buy">Buy</button>
+              <button class="rent">Rent</button>
+            </div>
           </div>
-          <div class="bottons">
-            <button class="buy">Buy</button>
-            <button class="rent">Rent</button>
+          <div class="img">
+            <img src="./img/hero-section/image.svg" alt="image" />
           </div>
-        </div>
-        <div class="img">
-          <img src="./img/hero-section/image.svg" alt="image" />
         </div>
       </div>
     </section>
@@ -334,153 +336,157 @@
 
     <section class="recently-added">
       <div class="container">
-        <div class="row">
-          <div class="text-group">
-            <h2>Recently Added</h2>
-            <p>
-              Show More
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M2.55994 8.00006C2.55994 4.99206 4.99194 2.56006 7.99994 2.56006C11.0079 2.56006 13.4399 4.99206 13.4399 8.00006C13.4399 11.0081 11.0079 13.4401 7.99994 13.4401C4.99194 13.4401 2.55994 11.0081 2.55994 8.00006ZM12.7999 8.00006C12.7999 5.34406 10.6559 3.20006 7.99994 3.20006C5.34394 3.20006 3.19994 5.34406 3.19994 8.00006C3.19994 10.6561 5.34394 12.8001 7.99994 12.8001C10.6559 12.8001 12.7999 10.6561 12.7999 8.00006Z"
-                  fill="#455A64"
-                />
-                <path
-                  d="M7.45606 10.656L10.1121 8L7.45606 5.344L7.90406 4.896L11.0081 8L7.90406 11.104L7.45606 10.656Z"
-                  fill="#455A64"
-                />
-                <path
-                  d="M10.5601 7.67993V8.31993L5.12006 8.31993V7.67993L10.5601 7.67993Z"
-                  fill="#455A64"
-                />
-              </svg>
-            </p>
-          </div>
+        <div class="text-group">
+          <h2>Recently Added</h2>
+          <p>
+            Show More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M2.55994 8.00006C2.55994 4.99206 4.99194 2.56006 7.99994 2.56006C11.0079 2.56006 13.4399 4.99206 13.4399 8.00006C13.4399 11.0081 11.0079 13.4401 7.99994 13.4401C4.99194 13.4401 2.55994 11.0081 2.55994 8.00006ZM12.7999 8.00006C12.7999 5.34406 10.6559 3.20006 7.99994 3.20006C5.34394 3.20006 3.19994 5.34406 3.19994 8.00006C3.19994 10.6561 5.34394 12.8001 7.99994 12.8001C10.6559 12.8001 12.7999 10.6561 12.7999 8.00006Z"
+                fill="#455A64"
+              />
+              <path
+                d="M7.45606 10.656L10.1121 8L7.45606 5.344L7.90406 4.896L11.0081 8L7.90406 11.104L7.45606 10.656Z"
+                fill="#455A64"
+              />
+              <path
+                d="M10.5601 7.67993V8.31993L5.12006 8.31993V7.67993L10.5601 7.67993Z"
+                fill="#455A64"
+              />
+            </svg>
+          </p>
+        </div>
 
-          <div class="col-xl-4 col-md-6 col-sm-9">
+        <div class="content">
+          <div class="row">
             <article>
               <img src="./img/recently-section/image1.svg" alt="image" />
-              <h6>Downtown Cairo - Zamalek</h6>
-              <p>
-                Modern 2-bedroom apartment in a prime location with city views
-              </p>
-              <div class="price">
-                <h5>$25,000</h5>
-                <p>360m² <span>Living Area</span></p>
+              <div class="frame">
+                <h6>Downtown Cairo - Zamalek</h6>
+                <p>
+                  Modern 2-bedroom apartment in a prime location with city views
+                </p>
+                <div class="price">
+                  <h5>$25,000</h5>
+                  <p>360m² <span>Living Area</span></p>
+                </div>
+                <a href="buy">Buy</a>
               </div>
-              <a href="buy">Buy</a>
             </article>
-          </div>
 
-          <div class="col-xl-4 col-md-6 col-sm-9">
             <article>
               <img src="./img/recently-section/image2.svg" alt="image" />
-              <h6>Downtown Cairo - Zamalek</h6>
-              <p>
-                Modern 2-bedroom apartment in a prime location with city views
-              </p>
-              <div class="price">
-                <h5>$25,000</h5>
-                <p>360m² <span>Living Area</span></p>
+              <div class="frame">
+                <h6>Downtown Cairo - Zamalek</h6>
+                <p>
+                  Modern 2-bedroom apartment in a prime location with city views
+                </p>
+                <div class="price">
+                  <h5>$25,000</h5>
+                  <p>360m² <span>Living Area</span></p>
+                </div>
+                <a class="Active" href="buy">Buy</a>
               </div>
-              <a href="buy">Buy</a>
             </article>
-          </div>
 
-          <div class="col-xl-4 col-md-6 col-sm-9">
             <article>
               <img src="./img/recently-section/image3.svg" alt="image" />
-              <h6>Downtown Cairo - Zamalek</h6>
-              <p>
-                Modern 2-bedroom apartment in a prime location with city views
-              </p>
-              <div class="price">
-                <h5>$25,000</h5>
-                <p>360m² <span>Living Area</span></p>
+              <div class="frame">
+                <h6>Downtown Cairo - Zamalek</h6>
+                <p>
+                  Modern 2-bedroom apartment in a prime location with city views
+                </p>
+                <div class="price">
+                  <h5>$25,000</h5>
+                  <p>360m² <span>Living Area</span></p>
+                </div>
+                <a href="rent">Rent</a>
               </div>
-              <a href="rent">Rent</a>
             </article>
-          </div>
 
-          <div class="col-xl-4 col-md-6 col-sm-9">
             <article>
               <img src="./img/recently-section/image4.svg" alt="image" />
-              <h6>Downtown Cairo - Zamalek</h6>
-              <p>
-                Modern 2-bedroom apartment in a prime location with city views
-              </p>
-              <div class="price">
-                <h5>$25,000</h5>
-                <p>360m² <span>Living Area</span></p>
+              <div class="frame">
+                <h6>Downtown Cairo - Zamalek</h6>
+                <p>
+                  Modern 2-bedroom apartment in a prime location with city views
+                </p>
+                <div class="price">
+                  <h5>$25,000</h5>
+                  <p>360m² <span>Living Area</span></p>
+                </div>
+                <a href="rent">Rent</a>
               </div>
-              <a href="rent">Rent</a>
             </article>
           </div>
-        </div>
 
-        <div class="col-xl-4 col-md-6 col-sm-9">
-          <article>
-            <img src="./img/recently-section/image5.svg" alt="image" />
-            <h6>Downtown Cairo - Zamalek</h6>
-            <p>
-              Modern 2-bedroom apartment in a prime location with city views
-            </p>
-            <div class="price">
-              <h5>$25,000</h5>
-              <p>360m² <span>Living Area</span></p>
-            </div>
-            <a href="buy">Buy</a>
-          </article>
-        </div>
+          <div class="row">
+            <article>
+              <img src="./img/recently-section/image5.svg" alt="image" />
+              <div class="frame">
+                <h6>Downtown Cairo - Zamalek</h6>
+                <p>
+                  Modern 2-bedroom apartment in a prime location with city views
+                </p>
+                <div class="price">
+                  <h5>$25,000</h5>
+                  <p>360m² <span>Living Area</span></p>
+                </div>
+                <a href="buy">Buy</a>
+              </div>
+            </article>
 
-        <div class="col-xl-4 col-md-6 col-sm-9">
-          <article>
-            <img src="./img/recently-section/image6.svg" alt="image" />
-            <h6>Downtown Cairo - Zamalek</h6>
-            <p>
-              Modern 2-bedroom apartment in a prime location with city views
-            </p>
-            <div class="price">
-              <h5>$25,000</h5>
-              <p>360m² <span>Living Area</span></p>
-            </div>
-            <a href="buy">Buy</a>
-          </article>
-        </div>
+            <article>
+              <img src="./img/recently-section/image6.svg" alt="image" />
+              <div class="frame">
+                <h6>Downtown Cairo - Zamalek</h6>
+                <p>
+                  Modern 2-bedroom apartment in a prime location with city views
+                </p>
+                <div class="price">
+                  <h5>$25,000</h5>
+                  <p>360m² <span>Living Area</span></p>
+                </div>
+                <a href="buy">Buy</a>
+              </div>
+            </article>
 
-        <div class="col-xl-4 col-md-6 col-sm-9">
-          <article>
-            <img src="./img/recently-section/image7.svg" alt="image" />
-            <h6>Downtown Cairo - Zamalek</h6>
-            <p>
-              Modern 2-bedroom apartment in a prime location with city views
-            </p>
-            <div class="price">
-              <h5>$25,000</h5>
-              <p>360m² <span>Living Area</span></p>
-            </div>
-            <a href="rent">Rent</a>
-          </article>
-        </div>
+            <article>
+              <img src="./img/recently-section/image7.svg" alt="image" />
+              <div class="frame">
+                <h6>Downtown Cairo - Zamalek</h6>
+                <p>
+                  Modern 2-bedroom apartment in a prime location with city views
+                </p>
+                <div class="price">
+                  <h5>$25,000</h5>
+                  <p>360m² <span>Living Area</span></p>
+                </div>
+                <a href="rent">Rent</a>
+              </div>
+            </article>
 
-        <div class="col-xl-4 col-md-6 col-sm-9">
-          <article>
-            <img src="./img/recently-section/image8.svg" alt="image" />
-            <h6>Downtown Cairo - Zamalek</h6>
-            <p>
-              Modern 2-bedroom apartment in a prime location with city views
-            </p>
-            <div class="price">
-              <h5>$25,000</h5>
-              <p>360m² <span>Living Area</span></p>
-            </div>
-            <a href="rent">Rent</a>
-          </article>
+            <article>
+              <img src="./img/recently-section/image8.svg" alt="image" />
+              <div class="frame">
+                <h6>Downtown Cairo - Zamalek</h6>
+                <p>
+                  Modern 2-bedroom apartment in a prime location with city views
+                </p>
+                <div class="price">
+                  <h5>$25,000</h5>
+                  <p>360m² <span>Living Area</span></p>
+                </div>
+                <a href="rent">Rent</a>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -494,12 +500,12 @@
         </p>
       </div>
       <div class="buttons">
-        <a href="#">Contact Us</a>
-        <a href="#">Read More</a>
+        <a class="contact" href="#">Contact Us</a>
+        <a class="read" href="#">Read More</a>
       </div>
     </section>
 
-    <section class="Subscribe">
+    <section class="subscribe">
       <div class="text-group">
         <h2>Subscribe to The New</h2>
         <p>
@@ -509,7 +515,7 @@
       </div>
 
       <div class="email">
-        <input type="email" />
+        <input type="email" value="Enter Your Email" />
         <button>Subscribe</button>
       </div>
     </section>
@@ -521,22 +527,20 @@
             <img src="./img/footer/logo.svg" alt="logo" />
           </div>
 
-          <div class="links">
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Products</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
 
           <div class="social">
             <a href="#"><img src="./img/footer/youtube.svg" alt="youtube" /></a>
